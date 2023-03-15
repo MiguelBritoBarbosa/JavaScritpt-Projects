@@ -13,7 +13,6 @@ class ValidaFormulario{
                 this.isValid(campo);
             });
         }
-
         this.formulario.addEventListener('submit', e => {
             this.handleSubmit(e);
         });
@@ -81,7 +80,7 @@ class ValidaFormulario{
         this.removeError(field);
 
         if (!field.value){
-            this.isEmpty()
+            this.isEmpty(field)
         }
         else if (field.name === "nome" || field.name === "sobrenome"){
                 
